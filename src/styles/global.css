@@ -1,0 +1,13 @@
+body.light {
+  background-color: #ffffff;
+  color: #111111;
+}
+
+body.dark {
+  background-color: #1a1a1a;
+  color: #eeeeee;
+}
+
+body.focus-mode nav {
+  display: none;
+}
