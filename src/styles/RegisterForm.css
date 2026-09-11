@@ -1,0 +1,120 @@
+.register-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  padding: 2rem;
+}
+
+.auth-form {
+  width: 100%;
+  max-width: 420px;
+  background: lch(95.92% 0.35 17.62);
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.auth-form__title {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.auth-form__photo-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.auth-form__avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #f3f4f6;
+  border: 3px solid #7c3aed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.auth-form__avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.auth-form__avatar-placeholder {
+  font-size: 1.8rem;
+  color: #9ca3af;
+}
+
+.auth-form__upload-btn {
+  font-size: 0.85rem;
+  color: #7c3aed;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.auth-form__file-input {
+  display: none;
+}
+
+.auth-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  flex: 1;
+}
+
+.auth-form__field label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.auth-form__field input,
+.auth-form__field select {
+  padding: 0.65rem 0.8rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.auth-form__field input:focus,
+.auth-form__field select:focus {
+  outline: none;
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15);
+}
+
+.auth-form__row {
+  display: flex;
+  gap: 1rem;
+}
+
+.auth-form__submit {
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.auth-form__submit:hover {
+  opacity: 0.9;
+}

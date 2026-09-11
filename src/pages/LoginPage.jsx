@@ -1,5 +1,6 @@
 import LoginForm from '../components/auth/LoginForm';
 
+
 function LoginPage() {
   const handleLogin = (data) => {
     console.log('Connexion avec :', data);

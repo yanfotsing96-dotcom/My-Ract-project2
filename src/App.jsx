@@ -1,23 +1,20 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from './context/ThemeContext';
-import ThemeToggle from './components/common/ThemeToggle';
 import RegisterPage from './pages/RegisterPage';
 import LoginPage from './pages/LoginPage';
 import ProfilePage from './pages/ProfilePage';
 import NotebookPage from './pages/NotebookPage';
 import SearchPage from './pages/SearchPage';
+
+import Firstpage from'./components/auth/Firstpage'
 function App() {
   return (
     <ThemeProvider>
       <BrowserRouter>
-        <nav>
-          <Link to="/notebook">Carnet</Link>
-          <Link to="/register">Inscription</Link> | <Link to="/login">Connexion</Link> | <Link to="/profile">Profil</Link>
-          <Link to="/search">Recherche</Link>
-
-          <ThemeToggle />
-        </nav>
+      <Firstpage/>
+    
         <Routes>
+          <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/profile" element={<ProfilePage />} />
